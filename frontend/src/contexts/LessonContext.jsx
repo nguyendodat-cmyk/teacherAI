@@ -9,12 +9,38 @@ export const LessonProvider = ({ children }) => {
   const [stepResults, setStepResults] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
-  const loadTodaysLesson = useCallback(async () => {
+  // Get all available lessons for selector UI
+  const allLessons = lessonsSeed.lessons;
+
+  // Load a specific lesson by ID
+  const loadLessonById = useCallback(async (lessonId) => {
     setIsLoading(true);
     try {
-      // Mock API - return first lesson from seed data
-      // Later this will be actual API call: await fetch('/api/lessons/today')
-      const lesson = lessonsSeed.lessons[0]; // food-polite-01
+      const lesson = lessonsSeed.lessons.find(l => l.lesson_id === lessonId);
+      if (lesson) {
+        setCurrentLesson(lesson);
+        setCurrentStepIndex(0);
+        setStepResults({});
+        console.log('Loaded lesson:', lesson);
+      } else {
+        console.error('Lesson not found:', lessonId);
+      }
+    } catch (error) {
+      console.error('Failed to load lesson:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  const loadTodaysLesson = useCallback(async (lessonId = null) => {
+    setIsLoading(true);
+    try {
+      // If lessonId provided, load that specific lesson
+      // Otherwise default to Logistics lesson for demo
+      // TODO: Later integrate with API to get recommended lesson
+      const targetId = lessonId || 'logistics_booking_container';
+      const lesson = lessonsSeed.lessons.find(l => l.lesson_id === targetId)
+                  || lessonsSeed.lessons[0];
       setCurrentLesson(lesson);
       setCurrentStepIndex(0);
       setStepResults({});
@@ -81,7 +107,9 @@ export const LessonProvider = ({ children }) => {
       isFirstStep,
       isLastStep,
       progress,
+      allLessons,
       loadTodaysLesson,
+      loadLessonById,
       nextStep,
       previousStep,
       recordStepResult,

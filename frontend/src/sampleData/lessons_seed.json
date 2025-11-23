@@ -429,6 +429,108 @@
           "speaking_lab_topic": "shopping"
         }
       ]
+    },
+    {
+      "lesson_id": "logistics_booking_container",
+      "title": "Booking a Container at the Port",
+      "title_vi": "Đặt container tại cảng",
+      "topic": "logistics",
+      "category": "Logistics",
+      "estimated_minutes": 10,
+      "difficulty_level": "intermediate",
+      "word_bank": [
+        { "english": "container", "vietnamese": "container" },
+        { "english": "dry container", "vietnamese": "container khô" },
+        { "english": "refrigerated container", "vietnamese": "container lạnh" },
+        { "english": "cut-off time", "vietnamese": "thời hạn chót nhận hàng" },
+        { "english": "quotation", "vietnamese": "báo giá" }
+      ],
+      "steps": [
+        {
+          "type": "warmup",
+          "text": "I'd like to book a 40-foot container to Hai Phong, please.",
+          "translation_vi": "Tôi muốn đặt một container 40 feet đi Hải Phòng ạ.",
+          "audio_url": "/audio/logistics-container-01/warmup.mp3"
+        },
+        {
+          "type": "dialogue",
+          "lines": [
+            {
+              "speaker": "Agent",
+              "text": "Good morning, how can I help you today?",
+              "text_vi": "Chào anh, hôm nay tôi có thể hỗ trợ gì?",
+              "audio_url": "/audio/logistics-container-01/line-1.mp3"
+            },
+            {
+              "speaker": "Customer",
+              "text": "I'd like to book one 40-foot container from Ho Chi Minh City to Hai Phong next Monday.",
+              "text_vi": "Tôi muốn đặt một container 40 feet từ TP.HCM đi Hải Phòng vào thứ Hai tuần tới.",
+              "audio_url": "/audio/logistics-container-01/line-2.mp3"
+            },
+            {
+              "speaker": "Agent",
+              "text": "Do you need a dry container or a refrigerated container?",
+              "text_vi": "Anh cần container khô hay container lạnh?",
+              "audio_url": "/audio/logistics-container-01/line-3.mp3"
+            },
+            {
+              "speaker": "Customer",
+              "text": "A dry container is fine. Please send me the quotation and cut-off time.",
+              "text_vi": "Container khô là được. Xin gửi báo giá và thời gian cut-off cho tôi.",
+              "audio_url": "/audio/logistics-container-01/line-4.mp3"
+            }
+          ],
+          "key_phrases": [
+            {
+              "english": "I'd like to book...",
+              "vietnamese": "Tôi muốn đặt...",
+              "example": "I'd like to book a 40-foot container."
+            },
+            {
+              "english": "Do you need a dry container or a refrigerated container?",
+              "vietnamese": "Anh cần container khô hay container lạnh?",
+              "example": "Do you need a dry container or a refrigerated container?"
+            },
+            {
+              "english": "Please send me the quotation.",
+              "vietnamese": "Xin gửi báo giá cho tôi.",
+              "example": "Please send me the quotation and cut-off time."
+            },
+            {
+              "english": "cut-off time",
+              "vietnamese": "thời hạn chót nhận hàng",
+              "example": "What is the cut-off time for this shipment?"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "question": "What type of container does the customer need?",
+          "options": [
+            "A dry container",
+            "A refrigerated container",
+            "A tank container"
+          ],
+          "correct_answer": 0,
+          "explanation": "The customer says \"A dry container is fine\" - Khách hàng nói \"Container khô là được.\""
+        },
+        {
+          "type": "build_sentence",
+          "prompt": "Translate: \"Tôi muốn đặt một container 40 feet đi Hải Phòng.\"",
+          "words": ["I'd", "like", "to", "book", "a", "40-foot", "container", "to", "Hai Phong"],
+          "correct_order": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+        },
+        {
+          "type": "speaking_prompt",
+          "prompt": "Explain your shipping request: container size, route, and cut-off time.",
+          "prompt_vi": "Hãy trình bày yêu cầu vận chuyển của bạn: kích cỡ container, tuyến đường và thời gian cut-off.",
+          "suggested_sentences": [
+            "I'd like to book a 40-foot dry container from Ho Chi Minh City to Hai Phong. What is the cut-off time?",
+            "I need to ship goods to Da Nang next week. Can you send me the quotation for a 20-foot container?"
+          ],
+          "speaking_lab_topic": "logistics"
+        }
+      ]
     }
   ]
 }
