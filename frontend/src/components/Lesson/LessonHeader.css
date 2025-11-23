@@ -4,6 +4,9 @@
   border: 1px solid var(--color-glass-border);
   border-radius: var(--radius-2xl);
   backdrop-filter: var(--glass-blur);
+  position: relative;
+  overflow: visible;
+  z-index: 10;
 }
 
 .lesson-header-main {
@@ -29,35 +32,38 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
-  padding: var(--space-1) var(--space-2);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--color-glass-border);
+  padding: var(--space-2) var(--space-3);
+  background: linear-gradient(135deg, rgba(0, 100, 255, 0.2), rgba(110, 58, 255, 0.2));
+  border: 1px solid var(--color-accent-primary);
   border-radius: var(--radius-md);
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-accent-primary);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .lesson-selector-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--color-accent-primary);
-  border-color: var(--color-accent-primary);
+  background: linear-gradient(135deg, rgba(0, 100, 255, 0.3), rgba(110, 58, 255, 0.3));
+  color: #fff;
+  border-color: var(--color-accent-secondary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 100, 255, 0.3);
 }
 
 .lesson-selector-dropdown {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   left: 0;
   right: 0;
-  max-width: 400px;
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-glass-border);
+  max-width: 450px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: rgba(20, 20, 35, 0.98);
+  border: 1px solid var(--color-accent-primary);
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  z-index: 100;
-  overflow: hidden;
-  margin-top: var(--space-2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  z-index: 9999;
 }
 
 .lesson-selector-item {
