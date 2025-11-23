@@ -4,6 +4,9 @@
   border: 1px solid var(--color-glass-border);
   border-radius: var(--radius-2xl);
   backdrop-filter: var(--glass-blur);
+  position: relative;
+  overflow: visible;
+  z-index: 10;
 }
 
 .lesson-header-main {
@@ -50,17 +53,17 @@
 
 .lesson-selector-dropdown {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   left: 0;
   right: 0;
-  max-width: 400px;
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-glass-border);
+  max-width: 450px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: rgba(20, 20, 35, 0.98);
+  border: 1px solid var(--color-accent-primary);
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  z-index: 100;
-  overflow: hidden;
-  margin-top: var(--space-2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  z-index: 9999;
 }
 
 .lesson-selector-item {
