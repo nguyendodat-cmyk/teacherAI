@@ -531,6 +531,300 @@
           "speaking_lab_topic": "logistics"
         }
       ]
+    },
+    {
+      "lesson_id": "logistics_negotiating_freight",
+      "title": "Negotiating Freight Rates",
+      "title_vi": "Đàm phán giá cước vận chuyển",
+      "topic": "logistics",
+      "category": "Logistics",
+      "estimated_minutes": 12,
+      "difficulty_level": "intermediate",
+      "word_bank": [
+        { "english": "freight rate", "vietnamese": "giá cước vận chuyển" },
+        { "english": "volume discount", "vietnamese": "chiết khấu theo khối lượng" },
+        { "english": "long-term contract", "vietnamese": "hợp đồng dài hạn" },
+        { "english": "spot rate", "vietnamese": "giá giao ngay" },
+        { "english": "all-in rate", "vietnamese": "giá trọn gói" },
+        { "english": "surcharge", "vietnamese": "phụ phí" }
+      ],
+      "steps": [
+        {
+          "type": "warmup",
+          "text": "Could you offer a better rate for regular shipments?",
+          "translation_vi": "Anh có thể đưa ra mức giá tốt hơn cho các lô hàng thường xuyên không?",
+          "audio_url": "/audio/logistics-freight-01/warmup.mp3"
+        },
+        {
+          "type": "dialogue",
+          "lines": [
+            {
+              "speaker": "Customer",
+              "text": "I've received your quotation. The freight rate seems a bit high. Is there any room for negotiation?",
+              "text_vi": "Tôi đã nhận được báo giá của anh. Giá cước có vẻ hơi cao. Có thể đàm phán được không?",
+              "audio_url": "/audio/logistics-freight-01/line-1.mp3"
+            },
+            {
+              "speaker": "Agent",
+              "text": "I understand. How many containers do you plan to ship per month?",
+              "text_vi": "Tôi hiểu. Anh dự định vận chuyển bao nhiêu container mỗi tháng?",
+              "audio_url": "/audio/logistics-freight-01/line-2.mp3"
+            },
+            {
+              "speaker": "Customer",
+              "text": "We're looking at about 10 to 15 containers monthly. Can you offer a volume discount?",
+              "text_vi": "Chúng tôi dự kiến khoảng 10 đến 15 container mỗi tháng. Anh có thể chiết khấu theo khối lượng không?",
+              "audio_url": "/audio/logistics-freight-01/line-3.mp3"
+            },
+            {
+              "speaker": "Agent",
+              "text": "For that volume, I can offer an all-in rate of $1,800 per container, including all surcharges.",
+              "text_vi": "Với khối lượng đó, tôi có thể đưa ra giá trọn gói $1,800 mỗi container, đã bao gồm tất cả phụ phí.",
+              "audio_url": "/audio/logistics-freight-01/line-4.mp3"
+            }
+          ],
+          "key_phrases": [
+            {
+              "english": "Is there any room for negotiation?",
+              "vietnamese": "Có thể đàm phán được không?",
+              "example": "The rate seems high. Is there any room for negotiation?"
+            },
+            {
+              "english": "Can you offer a volume discount?",
+              "vietnamese": "Anh có thể chiết khấu theo khối lượng không?",
+              "example": "We ship regularly. Can you offer a volume discount?"
+            },
+            {
+              "english": "all-in rate",
+              "vietnamese": "giá trọn gói",
+              "example": "I can offer an all-in rate including all surcharges."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "question": "What does the agent offer for the customer's shipping volume?",
+          "options": [
+            "An all-in rate of $1,800 per container",
+            "A spot rate with extra surcharges",
+            "A long-term contract only"
+          ],
+          "correct_answer": 0,
+          "explanation": "The agent offers an all-in rate of $1,800 per container including all surcharges - Đại lý đưa ra giá trọn gói $1,800/container đã bao gồm phụ phí."
+        },
+        {
+          "type": "build_sentence",
+          "prompt": "Translate: \"Anh có thể chiết khấu theo khối lượng không?\"",
+          "words": ["Can", "you", "offer", "a", "volume", "discount"],
+          "correct_order": [0, 1, 2, 3, 4, 5]
+        },
+        {
+          "type": "speaking_prompt",
+          "prompt": "Negotiate a freight rate: mention your shipping volume and ask for a discount.",
+          "prompt_vi": "Đàm phán giá cước: đề cập đến khối lượng vận chuyển và yêu cầu chiết khấu.",
+          "suggested_sentences": [
+            "We ship about 20 containers per month. Can you offer a better rate for regular shipments?",
+            "Your quotation is higher than other carriers. Is there any room for negotiation?"
+          ],
+          "speaking_lab_topic": "logistics"
+        }
+      ]
+    },
+    {
+      "lesson_id": "logistics_checking_container_status",
+      "title": "Checking Container Status",
+      "title_vi": "Kiểm tra tình trạng container",
+      "topic": "logistics",
+      "category": "Logistics",
+      "estimated_minutes": 10,
+      "difficulty_level": "intermediate",
+      "word_bank": [
+        { "english": "tracking number", "vietnamese": "mã theo dõi" },
+        { "english": "ETA (Estimated Time of Arrival)", "vietnamese": "thời gian dự kiến đến" },
+        { "english": "in transit", "vietnamese": "đang vận chuyển" },
+        { "english": "customs clearance", "vietnamese": "thông quan" },
+        { "english": "on schedule", "vietnamese": "đúng lịch" },
+        { "english": "delay", "vietnamese": "chậm trễ" }
+      ],
+      "steps": [
+        {
+          "type": "warmup",
+          "text": "Could you check the status of my shipment, please?",
+          "translation_vi": "Anh có thể kiểm tra tình trạng lô hàng của tôi được không?",
+          "audio_url": "/audio/logistics-status-01/warmup.mp3"
+        },
+        {
+          "type": "dialogue",
+          "lines": [
+            {
+              "speaker": "Customer",
+              "text": "Hi, I'd like to check the status of my container. The tracking number is MSKU7654321.",
+              "text_vi": "Xin chào, tôi muốn kiểm tra tình trạng container. Mã theo dõi là MSKU7654321.",
+              "audio_url": "/audio/logistics-status-01/line-1.mp3"
+            },
+            {
+              "speaker": "Agent",
+              "text": "Let me check that for you. Your container is currently in transit and has passed customs clearance in Singapore.",
+              "text_vi": "Để tôi kiểm tra giúp anh. Container của anh đang trong quá trình vận chuyển và đã thông quan tại Singapore.",
+              "audio_url": "/audio/logistics-status-01/line-2.mp3"
+            },
+            {
+              "speaker": "Customer",
+              "text": "Great. What's the ETA at Hai Phong port?",
+              "text_vi": "Tốt quá. Thời gian dự kiến đến cảng Hải Phòng là khi nào?",
+              "audio_url": "/audio/logistics-status-01/line-3.mp3"
+            },
+            {
+              "speaker": "Agent",
+              "text": "The ETA is November 28th. Everything is on schedule with no delays expected.",
+              "text_vi": "Dự kiến đến ngày 28 tháng 11. Mọi thứ đúng lịch, không có chậm trễ.",
+              "audio_url": "/audio/logistics-status-01/line-4.mp3"
+            }
+          ],
+          "key_phrases": [
+            {
+              "english": "I'd like to check the status of...",
+              "vietnamese": "Tôi muốn kiểm tra tình trạng của...",
+              "example": "I'd like to check the status of my container."
+            },
+            {
+              "english": "What's the ETA?",
+              "vietnamese": "Thời gian dự kiến đến là khi nào?",
+              "example": "What's the ETA at Hai Phong port?"
+            },
+            {
+              "english": "Everything is on schedule.",
+              "vietnamese": "Mọi thứ đúng lịch.",
+              "example": "Everything is on schedule with no delays expected."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "question": "What is the current status of the container?",
+          "options": [
+            "In transit, passed customs in Singapore",
+            "Delayed at the port",
+            "Waiting for customs clearance"
+          ],
+          "correct_answer": 0,
+          "explanation": "The container is in transit and has passed customs clearance in Singapore - Container đang vận chuyển và đã thông quan tại Singapore."
+        },
+        {
+          "type": "build_sentence",
+          "prompt": "Translate: \"Thời gian dự kiến đến cảng Hải Phòng là khi nào?\"",
+          "words": ["What's", "the", "ETA", "at", "Hai Phong", "port"],
+          "correct_order": [0, 1, 2, 3, 4, 5]
+        },
+        {
+          "type": "speaking_prompt",
+          "prompt": "Call to check your shipment status: provide tracking number and ask about ETA.",
+          "prompt_vi": "Gọi điện kiểm tra tình trạng lô hàng: cung cấp mã theo dõi và hỏi về thời gian đến.",
+          "suggested_sentences": [
+            "I'd like to check the status of container TEMU8765432. Has it cleared customs yet?",
+            "My tracking number is HLCU1234567. What's the ETA and is it on schedule?"
+          ],
+          "speaking_lab_topic": "logistics"
+        }
+      ]
+    },
+    {
+      "lesson_id": "logistics_booking_truck_pickup",
+      "title": "Booking Truck for Container Pickup",
+      "title_vi": "Đặt xe tải lấy container",
+      "topic": "logistics",
+      "category": "Logistics",
+      "estimated_minutes": 10,
+      "difficulty_level": "intermediate",
+      "word_bank": [
+        { "english": "truck/trailer", "vietnamese": "xe tải/xe đầu kéo" },
+        { "english": "pickup", "vietnamese": "lấy hàng" },
+        { "english": "delivery address", "vietnamese": "địa chỉ giao hàng" },
+        { "english": "warehouse", "vietnamese": "kho hàng" },
+        { "english": "empty container return", "vietnamese": "trả container rỗng" },
+        { "english": "Bill of Lading (B/L)", "vietnamese": "vận đơn" }
+      ],
+      "steps": [
+        {
+          "type": "warmup",
+          "text": "I need to arrange a truck to pick up my container from the port.",
+          "translation_vi": "Tôi cần sắp xếp xe tải để lấy container từ cảng.",
+          "audio_url": "/audio/logistics-truck-01/warmup.mp3"
+        },
+        {
+          "type": "dialogue",
+          "lines": [
+            {
+              "speaker": "Customer",
+              "text": "Hello, I need to book a truck to pick up a 40-foot container from Cat Lai port tomorrow morning.",
+              "text_vi": "Xin chào, tôi cần đặt xe tải để lấy container 40 feet từ cảng Cát Lái vào sáng mai.",
+              "audio_url": "/audio/logistics-truck-01/line-1.mp3"
+            },
+            {
+              "speaker": "Dispatcher",
+              "text": "Sure. What's the delivery address and do you have the Bill of Lading number?",
+              "text_vi": "Được ạ. Địa chỉ giao hàng là gì và anh có số vận đơn không?",
+              "audio_url": "/audio/logistics-truck-01/line-2.mp3"
+            },
+            {
+              "speaker": "Customer",
+              "text": "Deliver to our warehouse at 123 Industrial Zone, Binh Duong. The B/L number is HLCUSG123456.",
+              "text_vi": "Giao đến kho của chúng tôi tại 123 Khu Công nghiệp, Bình Dương. Số vận đơn là HLCUSG123456.",
+              "audio_url": "/audio/logistics-truck-01/line-3.mp3"
+            },
+            {
+              "speaker": "Dispatcher",
+              "text": "Got it. The truck will arrive at the port by 8 AM. Where should we return the empty container after unloading?",
+              "text_vi": "Đã ghi nhận. Xe sẽ đến cảng lúc 8 giờ sáng. Sau khi dỡ hàng thì trả container rỗng ở đâu ạ?",
+              "audio_url": "/audio/logistics-truck-01/line-4.mp3"
+            }
+          ],
+          "key_phrases": [
+            {
+              "english": "I need to book a truck to pick up...",
+              "vietnamese": "Tôi cần đặt xe tải để lấy...",
+              "example": "I need to book a truck to pick up a container from the port."
+            },
+            {
+              "english": "What's the delivery address?",
+              "vietnamese": "Địa chỉ giao hàng là gì?",
+              "example": "What's the delivery address and contact person?"
+            },
+            {
+              "english": "empty container return",
+              "vietnamese": "trả container rỗng",
+              "example": "Where should we return the empty container?"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "question": "What information does the dispatcher ask for?",
+          "options": [
+            "Delivery address and Bill of Lading number",
+            "Container weight and dimensions",
+            "Insurance and customs documents"
+          ],
+          "correct_answer": 0,
+          "explanation": "The dispatcher asks for the delivery address and B/L number - Điều phối viên hỏi địa chỉ giao hàng và số vận đơn."
+        },
+        {
+          "type": "build_sentence",
+          "prompt": "Translate: \"Tôi cần đặt xe tải để lấy container từ cảng.\"",
+          "words": ["I", "need", "to", "book", "a", "truck", "to", "pick up", "the", "container", "from", "the", "port"],
+          "correct_order": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        },
+        {
+          "type": "speaking_prompt",
+          "prompt": "Book a truck: specify container size, pickup location, and delivery address.",
+          "prompt_vi": "Đặt xe tải: nêu rõ kích cỡ container, địa điểm lấy hàng và địa chỉ giao hàng.",
+          "suggested_sentences": [
+            "I need a truck to pick up a 20-foot container from Hai Phong port and deliver to our factory in Hanoi.",
+            "Please arrange pickup for container MSKU1234567 tomorrow. Deliver to 456 Le Loi Street, District 1."
+          ],
+          "speaking_lab_topic": "logistics"
+        }
+      ]
     }
   ]
 }
